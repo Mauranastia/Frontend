@@ -1,0 +1,516 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color:#3c949e;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  align-items: center;
+  font-family:'Trebuchet MS';
+}
+
+.header-logo {
+  text-align: center;
+  
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .header-tengah, .header-logo {
+    width: 75%;
+  }
+
+  .header-logo {
+    width: 50%;
+  
+  }
+  
+}
+  
+
+/* Style dasar navbar */
+.navbar {
+  background-color:#024f55;
+  padding: 15px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.navbar a, .navbar .App-link {
+  color: #ffffff; /* Warna teks link */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  margin: 0 15px; /* Margin horizontal antara link */
+  font-size: 1.1em; /* Ukuran font link */
+  transition: color 0.3s; /* Transisi warna saat hover */
+}
+
+.navbar a:hover, .navbar .App-link:hover {
+  color: black; 
+}
+
+
+/* Untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    text-align: center;
+    height: 30vh; 
+  }
+}
+
+/* Style dasar untuk Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #83cccf; /* Warna latar seperti pada contoh */
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: 'Trebuchet MS';
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-family: 'Lucida Sans Unicode';
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: goldenrod;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-image img {
+  max-width: 50%;
+  border-radius: 8px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 50px;
+  width: 175px;
+  pointer-events: none;
+}
+
+.App-link{
+  background-color: #66b7ff;
+  border: none;
+  color: #cce7ff;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 1px 3px;
+  cursor: pointer;
+}
+
+
+
+/* Responsivitas untuk mobile */
+@media (max-width: 768px) {
+  .hero {
+  flex-direction: column;
+  text-align: center;
+  }
+  .hero-content {
+  max-width: 100%;
+  margin-bottom: 20px;
+  }
+  .hero-image img {
+    max-width: 80%;
+}
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #024f55;
+}
+
+/* Card Container */
+.card-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #3c949e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Card Body */
+.card-body {
+  padding: 15px;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+  color: black;
+  font-family: 'Trebuchet MS';
+}
+
+/* Card Description */
+.card-description {
+  font-size: 1em;
+  color: #292828;
+  margin-top: 10px;
+  font-family: 'Lucida Sans Unicode';
+}
+/* Main container styles */
+
+.section-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-family:'Trebuchet MS';
+}
+
+/* Card container styles */
+.card-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual card styles */
+.card2 {
+  background-color: #cce7ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image container */
+.card-image2 {
+  width: 100%;
+  height: 260px;
+  
+}
+
+.card-image2 img {
+  width: 100%;
+  height: 90%;
+  transition: transform 0.3s ease;
+}
+
+.card2:hover .card-image2 img {
+  transform: scale(1.05);
+}
+
+/* Card content styles */
+.card-content2 {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.card-content2 h3 {
+  color: #000000;
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+  padding-left: 0.5rem;
+  border-left: 3px solid #050505;
+}
+
+.card-content2 h4 {
+  color: #000000;
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  padding-left: 0.5rem;
+  border-left: 3px solid #050505;
+}
+
+.card-content2 p {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center; 
+  border-left: 3px solid #050505;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-container2 {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 1rem;
+  }
+  
+  .section-title {
+      font-size: 1.5rem;
+      margin: 1.5rem 0;
+  }
+  
+  .card-image2 {
+      height: 250px;
+  }
+  
+  .card-content2 h4 {
+      font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container2 {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* map.css */
+
+/* Wrapper untuk section peta */
+.map-container {
+  margin: 2rem;
+  text-align: center;
+}
+
+.map-title {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-family:'Trebuchet MS';
+}
+
+/* Wrapper untuk memastikan peta bersifat responsif */
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Membuat peta dengan rasio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; /* Pastikan peta tidak lebih lebar dari wadah */
+  background: #ddd; /* Warna latar belakang jika peta tidak dimuat */
+}
+
+/* Gaya untuk iframe peta */
+.map-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px; /* Menambahkan border-radius untuk sudut melengkung */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .map-title {
+    font-size: 1.5rem; /* Ukuran font lebih kecil untuk layar kecil */
+  }
+
+  .map-wrapper {
+    padding-top: 75%; /* Lebih besar untuk peta di layar kecil */
+  }
+}
+
+
+/* footer.css */
+/* Gaya Umum Footer */
+.footer {
+  background-color: #024f55; /* bg-gray-900 */
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Flex Container for Centering Content */
+.footer .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Flex Direction for Medium Screens and Up */
+@media (min-width: 768px) {
+  .footer .flex {
+    flex-direction: row;
+  }
+}
+
+/* Contact Info Section Styling */
+.footer .contact-section,
+.footer .email-section,
+.footer .instagram-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer .icon {
+  width: 2rem;
+  height: 2rem;
+  color: #9ca3af; /* text-gray-400 */
+}
+
+/* Link Styling */
+.footer a {
+  color: #ffffff; /* text-gray-400 */
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* Text Centering */
+.footer .text-center {
+  text-align: center;
+}
+
+/* Small Text Styling */
+.footer .text-sm {
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .footer .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.map-section {
+  margin-top: 30px;
+  font-family: 'Trebuchet MS';
+  color: #ffffff;
+}
+
+iframe {
+  border-radius: 8px;
+  width: 300%;
+  max-width: 600px;
+  height: 250px;
+  border: none;
+}
+
+/* Testi.css */
+.testi {
+  padding: 2rem;
+  background-color: #3c949e;
+}
+
+.testi .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.testi img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.testi h2{
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-family:'Trebuchet MS';
+}
+
+@media (max-width: 768px) {
+  .testi .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testi img {
+    max-width: 100%;
+  }
+}
